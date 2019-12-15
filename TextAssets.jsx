@@ -39,7 +39,7 @@
         if(parent.typename === 'ArtLayer' && parent.kind === LayerKind.TEXT && parent.visible){
 
 			try{
-				result += parent.textItem.contents + ';\n';
+				result += parent.textItem.contents + '\n';
 			}
 			catch(ex){}
 			
