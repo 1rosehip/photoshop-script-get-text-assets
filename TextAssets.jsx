@@ -11,18 +11,12 @@
     /**
      * save file
      * @param {string} content
-     * https://stackoverflow.com/questions/6477026/how-to-write-text-to-a-text-file-by-photoshop-javascript
      */
     var saveFile = function(content) {
 
         var name = app.activeDocument.name.replace(/\.[^\.]+$/,'');
         var path = app.activeDocument.path + '/' + name + '.text-assets.txt';
         var file = File(path);
-
-        /*
-        if(file.exists) {
-            file.remove();
-        }*/
         
         file.encoding = 'UTF8';
         file.open('w')
@@ -141,10 +135,6 @@
 
     // save file
     saveFile(result);
-
-    // testing --------------------------------
-    //var t = data;
-    //var a = 1;
 
 })();
 
